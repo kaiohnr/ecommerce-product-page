@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div id="page-overlay"></div>
+    <header>
+      <div class="header__container">
+        <div class="items__container">
+          <div class="menu__container">
+            <img src="./images/icon-menu.svg" alt="" />
+          </div>
+
+          <div class="logo__container">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+
+          <div class="links__container">
+            <ul class="links">
+              <li class="item-link"><a href="#">Collections</a></li>
+              <li class="item-link"><a href="#">Men</a></li>
+              <li class="item-link"><a href="#">Women</a></li>
+              <li class="item-link"><a href="#">About</a></li>
+              <li class="item-link"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="user-account__container">
+          <ul class="user-account">
+            <li class="icons">
+              <img id="icon-cart" src="./images/icon-cart.svg" alt="" />
+              <span id="item-count" class=""><p></p></span>
+
+              <div class="orders__container">
+                <h1>Cart</h1>
+                <ul class="order">
+
+                  <li class="order-empty"><p>Your cart is empty.</p></li>
+
+
+                </ul>
+
+                <p class="checkout-btn">Checkout</p>
+              </div>
+            </li>
+
+            <li><img id="user-avatar" src="./images/image-avatar.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="product-section">
+      <div class="product__container">
+        <div class="product-images">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/image-product-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/image-product-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/image-product-3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/image-product-4.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="product-other-images">
+            <ul>
+              <li><img src="./images/image-product-1-thumbnail.jpg" alt="" /></li>
+              <li><img src="./images/image-product-2-thumbnail.jpg" alt="" /></li>
+              <li><img src="./images/image-product-3-thumbnail.jpg" alt="" /></li>
+              <li><img src="./images/image-product-4-thumbnail.jpg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-details">
+          <ul class="details-list">
+            <li><h1 id="product-name">Sneaker Company</h1></li>
+            <li><p id="product-edition">Fall Limited Edition Sneakers</p></li>
+            <li>
+              <p id="product-description">
+                These low-profile sneakers are your perfect casual wear companion.
+                Featuring a durable rubber outer sole, they'll withstand everything the
+                weather can offer.
+              </p>
+            </li>
+          </ul>
+
+          <ul class="price-datails">
+            <li id="product-price-discount">
+              <p id="product-price-off">$125.00</p>
+              <p id="product-discount">50%</p>
+            </li>
+            <li>
+              <p id="product-price">$250.00</p>
+            </li>
+          </ul>
+
+          <ul class="product-define-price">
+            <li>
+              <p id="produce-quantity">
+                <img id="p-price-icon-minus" src="./images/icon-minus.svg" alt="" />
+                <span id="produce-quantity-number">0</span>
+                <img id="p-price-icon-plus" src="./images/icon-plus.svg" alt="" />
+              </p>
+            </li>
+
+            <li>
+              <p id="product-buy-btn">
+                <img id="p-price-icon-cart" src="./images/icon-cart.svg" alt="" /> Add to
+                cart
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
